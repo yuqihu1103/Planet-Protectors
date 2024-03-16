@@ -5,28 +5,14 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import { connectToDatabase } from "./db/db.js";
+import incrementRoute from "./routes/increment.js";
+import valueRoute from "./routes/value.js";
+import TreesModel from "./models/trees.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
-
-//enable session
-app.use(
-  session({
-    secret: "mental-health-monitor",
-    resave: false,
-    saveUninitialized: true,
-  })
-);
-
-// Middleware to check if the user is authenticated
-function isAuthenticated(req, res, next) {
-  if (req.session && req.session.username) {
-    return next();
-  }
-  res.redirect("/login");
-}
 
 // Middleware for parsing JSON request bodies
 app.use(bodyParser.json());
@@ -40,15 +26,9 @@ app.get("/test", (req, res) => {
   res.status(200).json({ message: "Test success!" });
 });
 
-//get-username route
-app.get("/get-username", isAuthenticated, (req, res) => {
-  const username = req.session.username;
-  if (username) {
-    res.json({ username });
-  } else {
-    res.status(401).json({ error: "User not authenticated" });
-  }
-});
+// Include your trees routes
+app.put("/increment", incrementRoute);
+app.get("/value", valueRoute);
 
 // Start your server
 const PORT = process.env.PORT || 3000;
@@ -57,4 +37,5 @@ app.listen(PORT, () => {
 });
 
 connectToDatabase();
+await TreesModel.createTree();
 export default app;
