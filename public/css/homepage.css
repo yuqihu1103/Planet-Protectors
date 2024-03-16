@@ -15,7 +15,6 @@ main p {
   margin-top: 5%;
   font-size: 1.5em;
   font-family: sans-serif;
-  text-align: left;
   color: #3c3f4a;
 }
 
@@ -55,4 +54,15 @@ footer h3 {
 .column {
   flex: 1;
   padding: 20px;
+}
+
+.container {
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+.container img {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  max-height: 100%; /* Ensure image doesn't exceed container height */
+  display: block; /* Ensure proper display of the image */
+  margin: auto; /* Center the image horizontally */
 }

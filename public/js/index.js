@@ -12,8 +12,10 @@ function loadHomepage() {
   <div class="container">
   <div class="column">
       <!-- Content for the first column -->
-      We need you!
-      Protect the Earth by Playing the Games!
+      <img
+              src="./assets/protector.png"
+              alt="planet-protector"
+            />
   </div>
 
   <div class="column">
@@ -33,8 +35,10 @@ function loadHomepage() {
 
   <div class="column">
       <!-- Content for the third column -->
-      I Am Global Warming.
-      I Am Going to Destroy Your Eco-System.
+      <img
+      src="./assets/terminator.png"
+      alt="terminator"
+    />
   </div>
 </div>
     `;
