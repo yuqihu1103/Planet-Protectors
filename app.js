@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import session from "express-session";
 import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
@@ -12,6 +13,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
+
+//enable session
+app.use(
+  session({
+    secret: "mental-health-monitor",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 
 // Middleware to check if the user is authenticated
 function isAuthenticated(req, res, next) {
@@ -31,11 +41,21 @@ app.use(express.static(path.join(__dirname, "public")));
 // Use the routes
 app.post("/register", registerRoute);
 app.post("/login", loginRoute);
-app.get("/login", logoutRoute);
+app.get("/logout", logoutRoute);
 
 //test route
 app.get("/test", (req, res) => {
   res.status(200).json({ message: "Test success!" });
+});
+
+//get-username route
+app.get("/get-username", isAuthenticated, (req, res) => {
+  const username = req.session.username;
+  if (username) {
+    res.json({ username });
+  } else {
+    res.status(401).json({ error: "User not authenticated" });
+  }
 });
 
 // Start your server

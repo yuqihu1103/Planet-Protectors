@@ -6,6 +6,7 @@ const router = express.Router();
 
 // Logout route
 router.get("/logout", async (req, res) => {
+  console.log("called");
   req.session.destroy();
   res.status(200).json({ message: "Logout successful" });
 });
