@@ -56,13 +56,36 @@ footer h3 {
   padding: 20px;
 }
 
-.container {
-  overflow: hidden; /* Ensure the image doesn't overflow the container */
-}
-
 .container img {
   max-width: 100%; /* Ensure image doesn't exceed container width */
   max-height: 100%; /* Ensure image doesn't exceed container height */
   display: block; /* Ensure proper display of the image */
   margin: auto; /* Center the image horizontally */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.column {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#term {
+  padding: 0px;
+}
+
+#danger {
+  color: red;
+  font-family: "Frijole", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }

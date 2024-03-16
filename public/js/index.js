@@ -9,6 +9,7 @@ function loadHomepage() {
   const contactInfo = document.getElementById("contact-info");
 
   mainContent.innerHTML = `
+  <h1 class="text-center">Planet Protector</h1>
   <div class="container">
   <div class="column">
       <!-- Content for the first column -->
@@ -20,11 +21,11 @@ function loadHomepage() {
 
   <div class="column">
       <!-- Content for the second column -->
-      <h1 class="text-center">Planet Protector</h1>
       <div class="container">
           <div class="row justify-content-center">
               <p>
-              The world is in DANGER!
+              The world is in 
+                <span id="danger">DANGER</span>!
               </p>
               <p>
               It need your help.
@@ -33,11 +34,12 @@ function loadHomepage() {
       </div>
   </div>
 
-  <div class="column">
+  <div class="column" id="term">
       <!-- Content for the third column -->
       <img
       src="./assets/terminator.png"
       alt="terminator"
+      id="terminator"
     />
   </div>
 </div>
