@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var buttonsContainer = document.getElementById("buttonsContainer");
   buttonsContainer.innerHTML = `
     <button onclick="loadLevel(1)">Tree Planter</button>
-    <button onclick="loadLevel(2)">Level 1</button>
+    <button onclick="loadLevel(2)">Level 2</button>
     <button onclick="loadLevel(3)">Level 3</button>
     <button id="back"> Back to Homepage</button>
   `;
+  loadLevel(1);
   const backButton = document.getElementById("back");
   backButton.addEventListener("click", redirectToHomePage);
 
@@ -18,18 +19,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function loadLevel(level) {
   var scratchFrame = document.getElementById("scratchFrame");
+  var introContainer = document.getElementById("introContainer");
   switch (level) {
     case 1:
       scratchFrame.src = "https://scratch.mit.edu/projects/984039284/embed";
+      introContainer.innerHTML = "level1";
       break;
     case 2:
       scratchFrame.src = "https://scratch.mit.edu/projects/level1_link/embed";
+      introContainer.innerHTML = "level2";
       break;
     case 3:
       scratchFrame.src = "https://scratch.mit.edu/projects/level3_link/embed";
+      introContainer.innerHTML = "level3";
       break;
     default:
       scratchFrame.src = "https://scratch.mit.edu/projects/984039284/embed";
+      introContainer.innerHTML = "level1";
       break;
   }
 }
