@@ -5,6 +5,7 @@ main h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 4.5em;
+  margin-bottom: 2%;
 }
 
 .text-center {
@@ -19,9 +20,24 @@ main h1 {
 }
 
 .col-1 {
-  flex: 0 0 10%; /* 10% width */
+  flex: 0 0 35%; /* 10% width */
 }
 
 .col-11 {
-  flex: 0 0 90%; /* 90% width */
+  flex: 0 0 65%; /* 90% width */
+  text-align: left;
+}
+
+button {
+  background-color: green; /* Set the background color of the button */
+  color: white; /* Set the text color of the button */
+  font-size: large;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 150px;
+}
+
+button:hover {
+  background-color: darkgreen; /* Change background color on hover */
 }

@@ -2,9 +2,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   var buttonsContainer = document.getElementById("buttonsContainer");
   buttonsContainer.innerHTML = `
-    <button onclick="loadLevel(1)">Tree Planter</button>
-    <button onclick="loadLevel(2)">Level 2</button>
-    <button onclick="loadLevel(3)">Level 3</button>
+    <button onclick="loadLevel(1)" class="btn btn-primary">Tree Planter</button>
+    <button onclick="loadLevel(2)" class="btn btn-primary">Solar Saver</button>
+    <button onclick="loadLevel(3)" class="btn btn-primary">Green Traveler</button>
     <button id="back"> Back to Homepage</button>
   `;
   loadLevel(1);
@@ -26,11 +26,11 @@ function loadLevel(level) {
       introContainer.innerHTML = "level1";
       break;
     case 2:
-      scratchFrame.src = "https://scratch.mit.edu/projects/level1_link/embed";
+      scratchFrame.src = "https://scratch.mit.edu/projects/984054603/embed";
       introContainer.innerHTML = "level2";
       break;
     case 3:
-      scratchFrame.src = "https://scratch.mit.edu/projects/level3_link/embed";
+      scratchFrame.src = "https://scratch.mit.edu/projects/984072678/embed";
       introContainer.innerHTML = "level3";
       break;
     default:
