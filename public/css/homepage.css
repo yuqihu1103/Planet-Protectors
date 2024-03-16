@@ -7,7 +7,7 @@ footer {
 }
 
 main h1 {
-  margin-bottom: 2%;
+  margin-top: 3%;
   color: #0a7b06;
   font-family: "Rubik Gemstones", system-ui;
   font-weight: 400;
@@ -100,7 +100,7 @@ img {
 }
 
 .message p {
-  font-size: 4em;
+  font-size: 3.5em;
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
@@ -120,4 +120,8 @@ img {
 
 #play:hover {
   background-color: darkgreen; /* Change background color on hover */
+}
+
+.message {
+  margin-bottom: 12%;
 }
