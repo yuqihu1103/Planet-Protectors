@@ -1,6 +1,6 @@
 body {
-  background-image: url("../assets/background_picture.webp");
-  background-size: cover;
+  background-image: url("../assets/bg.jpg");
+  background-size: 100% 100vh; /* Cover the entire viewport height */
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
