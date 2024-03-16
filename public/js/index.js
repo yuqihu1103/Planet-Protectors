@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", loadHomepage);
 const homeLink = document.getElementById("home-link");
-const learnMoreLink = document.getElementById("learn-more-link");
 homeLink.addEventListener("click", loadHomepage);
-learnMoreLink.addEventListener("click", loadLearnMore);
 
 function loadHomepage() {
   const mainContent = document.getElementById("main-content");
-  const contactInfo = document.getElementById("contact-info");
 
   mainContent.innerHTML = `
   <h1 class="text-center">Planet Protector</h1>
@@ -22,14 +19,15 @@ function loadHomepage() {
   <div class="column">
       <!-- Content for the second column -->
       <div class="container">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center message">
               <p>
               The world is in 
-                <span id="danger">DANGER</span>!
+                <span id="danger">DANGER!</span>
               </p>
               <p>
-              It need your help.
+              It needs your help.
               </p>
+                <a href="#" class="btn btn-primary" id="play">Play Now!</a>
           </div>
       </div>
   </div>
@@ -44,8 +42,11 @@ function loadHomepage() {
   </div>
 </div>
     `;
+  const playButton = document.getElementById("play");
+  playButton.addEventListener("click", redirectToGamePage);
+}
 
-  contactInfo.innerHTML = `
-        <h3>Contact the Authors</h3>
-    `;
+function redirectToGamePage(event) {
+  event.preventDefault(); // Prevent default link behavior (navigating to "#")
+  window.location.href = "html/game.html"; // Navigate to the game.html page
 }

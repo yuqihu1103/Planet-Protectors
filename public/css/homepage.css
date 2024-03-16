@@ -8,7 +8,11 @@ footer {
 
 main h1 {
   margin-bottom: 2%;
-  color: #3c3f4a;
+  color: #0a7b06;
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5em;
 }
 
 main p {
@@ -88,4 +92,27 @@ img {
   font-family: "Frijole", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+.message p {
+  font-size: 4em;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#play {
+  background-color: green; /* Set the background color of the button */
+  color: white; /* Set the text color of the button */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  font-size: 4em; /* Set font size really big */
+  margin-top: 3%;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#play:hover {
+  background-color: darkgreen; /* Change background color on hover */
 }
