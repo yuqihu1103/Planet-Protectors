@@ -1,0 +1,41 @@
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 2%;
+    color: #3c3f4a;
+}
+
+main p {
+    margin-top: 5%;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: left;
+    color: #3c3f4a;
+}
+
+footer {
+    color: #3c3f4a;
+}
+
+footer h3 {
+    font-size: x-large;
+}
+
+.card-title {
+    font-family: 'Caveat', cursive;
+    font-family: 'Fuggles', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
+}
+
+.card-text {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: large;
+}

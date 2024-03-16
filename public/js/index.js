@@ -41,7 +41,7 @@ function loadLearnMore() {
   const contactInfo = document.getElementById("contact-info");
 
   mainContent.innerHTML = `
-        <h1>More About the Mental Health Monitor</h1>
+        <h1>More About the Eco Game</h1>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card" style="width: 18rem">

@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 logOutButton.addEventListener("click", () => {
   // Make an HTTP request to the server's /logout route
-  console.log("clicked");
   fetch("/logout", {
     method: "GET",
   })
