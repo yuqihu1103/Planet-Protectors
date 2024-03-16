@@ -5,9 +5,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import { connectToDatabase } from "./db/db.js";
-import registerRoute from "./routes/register.js";
-import loginRoute from "./routes/login.js";
-import logoutRoute from "./routes/logout.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -37,11 +34,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, "public")));
-
-// Use the routes
-app.post("/register", registerRoute);
-app.post("/login", loginRoute);
-app.get("/logout", logoutRoute);
 
 //test route
 app.get("/test", (req, res) => {
