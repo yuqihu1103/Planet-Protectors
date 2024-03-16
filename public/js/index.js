@@ -25,7 +25,7 @@ function loadHomepage() {
                 <span id="danger">DANGER!</span>
               </p>
               <p>
-              It needs your help.
+              It needs your <span id="help">help!</span>
               </p>
                 <a href="#" class="btn btn-primary" id="play">Play Now!</a>
           </div>

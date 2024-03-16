@@ -1,31 +1,13 @@
-body {
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-.dashboard-container {
-  max-width: 800px;
-  margin: 50px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-h1 {
+main h1 {
+  margin-bottom: 2%;
+  color: #0a7b06;
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5em;
   margin-top: 0;
-  color: #333;
 }
 
-.button-container {
-  margin-top: 30px;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-#logout-message {
-  font-size: xx-large;
-  color: green;
+.container {
+  display: flex;
 }
