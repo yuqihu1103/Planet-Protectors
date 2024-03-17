@@ -1,8 +1,8 @@
 # Global Warming Game
 
 # Credits:
-Ricky
-Ashvath
+Ricky, 
+Ashvath, 
 Aneesh
 
 # Instructions
