@@ -19,23 +19,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function loadLevel(level) {
   var scratchFrame = document.getElementById("scratchFrame");
-  var introContainer = document.getElementById("introContainer");
+  var imageContainer = document.getElementById("imageContainer");
   switch (level) {
     case 1:
       scratchFrame.src = "https://scratch.mit.edu/projects/984039284/embed";
-      introContainer.innerHTML = "";
+      imageContainer.innerHTML = `
+      <img src="../assets/tree-1.png" alt="" />
+<img src="../assets/tree-2.png" alt="" />
+`;
       break;
     case 2:
       scratchFrame.src = "https://scratch.mit.edu/projects/984054603/embed";
-      introContainer.innerHTML = "";
+      imageContainer.innerHTML = `
+      <img src="../assets/solor-1.png" alt="" />
+<img src="../assets/solar-2.png" alt="" />
+`;
       break;
     case 3:
       scratchFrame.src = "https://scratch.mit.edu/projects/984072678/embed";
-      introContainer.innerHTML = "";
+      imageContainer.innerHTML = `
+      <img src="../assets/car-1.png" alt="" />
+<img src="../assets/car-2.png" alt="" />
+`;
       break;
     default:
       scratchFrame.src = "https://scratch.mit.edu/projects/984039284/embed";
-      introContainer.innerHTML = "";
+      imageContainer.innerHTML = `
+                  <img src="../assets/tree-1.png" alt="" />
+            <img src="../assets/tree-2.png" alt="" />
+      `;
       break;
   }
 }
