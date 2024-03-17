@@ -5,7 +5,7 @@ main h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 4.5em;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .text-center {
@@ -42,9 +42,8 @@ button:hover {
   background-color: darkgreen; /* Change background color on hover */
 }
 
-#imageContainer img {
-  width: 150;
-  height: 100;
+#imageContainer {
+  margin-top: 1%;
 }
 
 .column {
@@ -54,7 +53,7 @@ button:hover {
 
 .container img {
   max-width: 75%; /* Ensure image doesn't exceed container width */
-  max-height: 70%; /* Ensure image doesn't exceed container height */
+  max-height: 68%; /* Ensure image doesn't exceed container height */
   display: flex; /* Ensure proper display of the image */
   margin: auto; /* Center the image horizontally */
 }

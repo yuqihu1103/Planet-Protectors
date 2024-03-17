@@ -5,6 +5,7 @@ main h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 4.5em;
+  margin-bottom: 1%;
 }
 
 .text-center {
@@ -12,8 +13,48 @@ main h1 {
 }
 
 p {
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.letter {
+  background-image: url("../assets/letter.jpg");
+  background-size: cover;
+  padding: 20px;
+  width: 70vw;
+  height: 65vh;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-left: 13vw;
+}
+
+.letter .content {
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  border: 1px solid #ccc;
+}
+
+.letter p:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last paragraph */
+}
+
+main {
+  text-align: center;
+}
+
+#first {
+  margin-top: 7%;
+}
+
+#last {
+  text-align: right;
 }

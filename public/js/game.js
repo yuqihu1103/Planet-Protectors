@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <button onclick="loadLevel(1)" class="btn btn-primary">Tree Planter</button>
     <button onclick="loadLevel(2)" class="btn btn-primary">Solar Saver</button>
     <button onclick="loadLevel(3)" class="btn btn-primary">Green Traveler</button>
-    <button id="back"> Back to Homepage</button>
+    <button id="back"> Back to Homepage </button>
   `;
   loadLevel(1);
   const backButton = document.getElementById("back");
