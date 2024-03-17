@@ -41,3 +41,20 @@ button {
 button:hover {
   background-color: darkgreen; /* Change background color on hover */
 }
+
+#imageContainer img {
+  width: 150;
+  height: 100;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.container img {
+  max-width: 75%; /* Ensure image doesn't exceed container width */
+  max-height: 70%; /* Ensure image doesn't exceed container height */
+  display: flex; /* Ensure proper display of the image */
+  margin: auto; /* Center the image horizontally */
+}

@@ -23,19 +23,19 @@ function loadLevel(level) {
   switch (level) {
     case 1:
       scratchFrame.src = "https://scratch.mit.edu/projects/984039284/embed";
-      introContainer.innerHTML = "level1";
+      introContainer.innerHTML = "";
       break;
     case 2:
       scratchFrame.src = "https://scratch.mit.edu/projects/984054603/embed";
-      introContainer.innerHTML = "level2";
+      introContainer.innerHTML = "";
       break;
     case 3:
       scratchFrame.src = "https://scratch.mit.edu/projects/984072678/embed";
-      introContainer.innerHTML = "level3";
+      introContainer.innerHTML = "";
       break;
     default:
       scratchFrame.src = "https://scratch.mit.edu/projects/984039284/embed";
-      introContainer.innerHTML = "level1";
+      introContainer.innerHTML = "";
       break;
   }
 }
