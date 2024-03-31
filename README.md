@@ -1,11 +1,12 @@
-# Global Warming Game
+# Planet Protector
 
 # Demo
-## Overview (GIF)
+### Video Demo: https://www.youtube.com/watch?v=UF2oNR1WOUU
+### Overview (GIF)
 ![ezgif-3-a28ff286e8](https://github.com/yuqihu1103/Planet-Protectors/assets/133090163/70c3d0a6-2634-444c-9c5e-a9808b25ddb8)
 
 # Credits:
-Ricky, 
+Yuqi (Ricky), 
 Ashvath, 
 Aneesh
 
