@@ -1,11 +1,15 @@
 # Planet Protector
 
+PlanetProtector is a web application that embeds three mini-games made with Scratch that aim to educate children on key facts about global warming in a fun and engaging way. When all games are completed, gamers will be able to claim a final prize - a tree to be planted on their behalf. We also keep track of total number of trees planted and environmental effects created.
+
 This project was placed 6th overall and 2nd in the game development track in PawHacks 2024.
 
 ## Demo
-**Deployed link**: https://planet-protectors.onrender.com
+**Deployed Link**: https://planet-protectors.onrender.com
 
 **Video Demo**: https://www.youtube.com/watch?v=UF2oNR1WOUU
+
+**Presentation Slides**:
 
 **Overview (GIF)**
 ![ezgif-3-a28ff286e8](https://github.com/yuqihu1103/Planet-Protectors/assets/133090163/70c3d0a6-2634-444c-9c5e-a9808b25ddb8)
