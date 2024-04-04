@@ -64,3 +64,6 @@ We want to make Planet Protector official, which means refining all the games, c
 Yuqi (Ricky), 
 Ashvath, 
 Aneesh
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) for details.
